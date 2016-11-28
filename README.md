@@ -1,4 +1,4 @@
-## Mac OS X Development Setup
+# Mac OS X Development Setup
 
 This article assumes your computer:
 
