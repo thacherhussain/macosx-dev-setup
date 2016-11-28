@@ -1,7 +1,5 @@
 ## Mac OS X Development Setup
 
-Setting up my machine to learn to web development was something I really struggled with before having access to the professional developers that taught my bootcamp program. This guide is based on what they walked us through -- I wish I had had this when I was banging around trying to learn on my own!
-
 This article assumes your computer:
 
 - Is running Mac OS X 10.12 El Capitan or above
@@ -10,10 +8,6 @@ This article assumes your computer:
 - Has a functioning screen, keyboard, and trackpad
 - Has plenty of free hard drive space and memory
 - Can reliably connect to wireless networks
-
-This laptop will not work:
-
-![busted laptop](http://i.imgur.com/64qznGR.jpg)
 
 ## Getting Started
 
@@ -37,20 +31,15 @@ Checklist:
 * Closed all applications
 * Restarted your computer
 
-
-## The Terminal
-
-Included in Mac OS X is the **Terminal**—an app that runs a Unix shell. A **Unix shell** is a command line user interface between you and your computer's operating system. 
-
-### Terminal Options
+## iTerm2 
 
 There are many different options to customize your terminal app, however, rather than messing with the Mac OS X app, I recommend using iTerm with zsh.
 
-First, download and install [iTerm2](https://www.iterm2.com/)
+Download and install [iTerm2](https://www.iterm2.com/)
 
-You can customize the look of iTerm from the preferences menu OR follow this guide to [install z shell and oh-my-zsh](https://github.com/thacherT1D/fishToZsh) for even more functionality.
+OPTIONAL: You can customize the look of iTerm from the preferences menu OR follow this guide to [install z shell and oh-my-zsh](https://github.com/thacherT1D/fishToZsh) for even more functionality.
 
-## Install Homebrew
+## Homebrew
 
 Now that your Terminal is setup, it's time to install [Homebrew](http://brew.sh/), the de facto package manager for OS X. If you've never heard of a package manager, think of it as an app store for **free** command line programs.
 
@@ -83,7 +72,7 @@ To verify Homebrew is installed correctly, run the following command.
 brew doctor
 ```
 
-## Install and Configure Chrome
+## Chrome
 
 Now it's time to install Google Chrome, a fast and free web browser that automatically updates itself with the latest web technologies.
 
@@ -110,7 +99,7 @@ Other:
 * Kill News Feed
 * Momentum
 
-## Install and Configure Atom
+## Atom
 
 Now it's time to install [Atom](https://atom.io/), a hackable text editor for the 21st century.
 
@@ -165,7 +154,7 @@ Now, relaunch the Terminal and verify these settings with the following command.
 echo $EDITOR
 ```
 
-## Install and Configure Git
+## Git
 
 Using Homebrew, you can also install [Git](https://git-scm.com/), the version control system of choice among choosy developers.
 
@@ -190,7 +179,7 @@ git config --global user.name 'YOUR FULL NAME'
 git config --global user.email 'YOUR EMAIL ADDRESS'
 ```
 
-## Install Node
+## Node
 
 Using Homebrew, you can also install [Node](https://nodejs.org/), an open-source, cross-platform runtime system for developing applications in JavaScript. In other words, it runs JavaScript outside the browser.
 
