@@ -1,5 +1,7 @@
 # Mac OS X Development Setup
 
+Basic Development Setup including Chrome, iTerm2, Atom, Hombrew, Git, and Node.
+
 This article assumes your computer:
 
 - Is running Mac OS X 10.12 El Capitan or above
@@ -19,7 +21,8 @@ Make sure that you have your computer username and password memorized or handy a
 
 Before we dive in to modifications, open the AppStore application and check if you have any updates -- unless you are sure you don't need them, just accept all updates. This may take some time to download and install, but it is important to be starting with the most up to date operating system and tools.
 
-If you don't have it installed already, search for and install Xcode.
+### Xcode
+From the AppStore, search for and install Xcode.
 
 When you're done, if it's not already required, reboot your computer.
 
@@ -28,49 +31,7 @@ Checklist:
 * Updated to the latest version of Mac OS X
 * Installed/Updated Xcode from the AppStore
 * Run all updates from the AppStore
-* Closed all applications
 * Restarted your computer
-
-## iTerm2 
-
-There are many different options to customize your terminal app, however, rather than messing with the Mac OS X app, I recommend using iTerm with zsh.
-
-Download and install [iTerm2](https://www.iterm2.com/)
-
-OPTIONAL: You can customize the look of iTerm from the preferences menu OR follow this guide to [install z shell and oh-my-zsh](https://github.com/thacherT1D/fishToZsh) for even more functionality.
-
-## Homebrew
-
-Now that your Terminal is setup, it's time to install [Homebrew](http://brew.sh/), the de facto package manager for OS X. If you've never heard of a package manager, think of it as an app store for **free** command line programs.
-
-To get started, run the following command in your shell. It'll download and run a script file that downloads and installs Homebrew onto your development environment.
-
-```
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-```
-
-If asked, be sure to agree when asked to install the **Xcode CommandLine Tools**. It may take about 10 minutes to download and install.
-
-
-### Update Homebrew
-
-If you've previously installed Homebrew, now's a good time to update it by running the following command.
-
-```
-brew update
-```
-
-If it's been a while since the last update, you'll see something like this.
-
-**PROTIP:** Run this command periodically as Homebrew doesn't automatically update itself.
-
-### Verify Homebrew
-
-To verify Homebrew is installed correctly, run the following command.
-
-```
-brew doctor
-```
 
 ## Chrome
 
@@ -98,6 +59,16 @@ Dev Related:
 Other:
 * Kill News Feed
 * Momentum
+
+
+## iTerm2 
+
+There are many different options to customize your terminal application, however, I recommend using iTerm2 instead.
+
+Download and install [iTerm2](https://www.iterm2.com/)
+
+OPTIONAL: You can customize the look of iTerm from the preferences menu OR follow this guide to [install z shell and oh-my-zsh](https://github.com/thacherT1D/fishToZsh) for even more functionality.
+
 
 ## Atom
 
@@ -152,6 +123,38 @@ Now, relaunch the Terminal and verify these settings with the following command.
 
 ```
 echo $EDITOR
+```
+## Homebrew
+
+Now that your Terminal is setup, it's time to install [Homebrew](http://brew.sh/), the de facto package manager for OS X. If you've never heard of a package manager, think of it as an app store for **free** command line programs.
+
+To get started, run the following command in your shell. It'll download and run a script file that downloads and installs Homebrew onto your development environment.
+
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+If asked, be sure to agree when asked to install the **Xcode CommandLine Tools**. It may take about 10 minutes to download and install.
+
+
+### Update Homebrew
+
+If you've previously installed Homebrew, now's a good time to update it by running the following command.
+
+```
+brew update
+```
+
+If it's been a while since the last update, you'll see something like this.
+
+**PROTIP:** Run this command periodically as Homebrew doesn't automatically update itself.
+
+### Verify Homebrew
+
+To verify Homebrew is installed correctly, run the following command.
+
+```
+brew doctor
 ```
 
 ## Git
