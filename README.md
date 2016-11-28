@@ -195,11 +195,11 @@ Once it finishes, run the following command.
 node -v
 ```
 
-### Congratulations!
+## Congratulations!
 
 You've successfully setup a web development environment on Mac OS X!
 
-###Other Useful Dev Tools
+### Other Useful Dev Tools
 These are a few other tools that can be helpful for different aspects of development:
 * Password Manager: [Last Pass](https://lastpass.com) or [One Password](https://1password.com/)
 * Organizes windows on your screen: [Spectacle](https://www.spectacleapp.com/) OR [Moom](https://manytricks.com/moom/)
