@@ -110,20 +110,6 @@ You'll find it insanely useful to open files and directories into Atom from the 
 To get started, select the `Atom > Install Shell Commands` menu item.
 
 
-### Discover the `EDITOR` environment variable
-
-Environment variables like `EDITOR` can be set in a shell's startup file. While Fish's startup file is handy, add the following settings.
-
-```
-# Atom
-set -x EDITOR 'atom -w'
-```
-
-Now, relaunch the Terminal and verify these settings with the following command.
-
-```
-echo $EDITOR
-```
 ## Homebrew
 
 Now that your Terminal is setup, it's time to install [Homebrew](http://brew.sh/), the de facto package manager for OS X. If you've never heard of a package manager, think of it as an app store for **free** command line programs.
