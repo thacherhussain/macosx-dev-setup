@@ -191,12 +191,8 @@ You've successfully setup a web development environment on Mac OS X!
 ### Other Useful Dev Tools
 These are a few other tools that can be helpful for different aspects of development:
 * Password Manager: [Last Pass](https://lastpass.com) or [One Password](https://1password.com/)
-* Organizes windows on your screen: [Spectacle](https://www.spectacleapp.com/) OR [Moom](https://manytricks.com/moom/)
-* Keeps a history of what you copy [Jump Cut](http://jumpcut.sourceforge.net/)
+* Organizes windows on your screen: [Spectacle](https://www.spectacleapp.com/)
+* Keeps a history of what you copy [FlyCut](http://jumpcut.sourceforge.net/)
 * Color Picker: [sip](http://sipapp.io/) (color)
 * Image Editor: [Pixelmaker](http://www.pixelmator.com/mac/)
 * Color Schemes: [Coolors](https://coolors.co/)
-* For Notes: [One Note](https://www.onenote.com/) OR [Evernote](https://evernote.com/)
-* Automatically dim your screen for working at night: [Flux](https://justgetflux.com/) — night time your screen
-* Level up your screenshots: [SnappyApp](https://snappy-app.com/)
-* Take notes with a live MarkDown preview [MacDown](https://macdown.uranusjr.com/)
