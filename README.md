@@ -117,7 +117,7 @@ Now that your Terminal is setup, it's time to install [Homebrew](http://brew.sh/
 To get started, run the following command in your shell. It'll download and run a script file that downloads and installs Homebrew onto your development environment.
 
 ```
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 If asked, be sure to agree when asked to install the **Xcode CommandLine Tools**. It may take about 10 minutes to download and install.
