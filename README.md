@@ -1,6 +1,6 @@
 # Mac OS X Development Setup
 
-Basic Development Setup including Chrome, iTerm2, Atom, Hombrew, Git, and Node.
+Basic Development Setup including Xcode, iTerm2, Homebrew, nvm/node, Git, oh my zsh, Chrome, and Atom.
 
 This article assumes your computer:
 
@@ -116,12 +116,20 @@ git config --global user.name 'YOUR FULL NAME'
 git config --global user.email 'YOUR EMAIL ADDRESS'
 ```
 
-## oh-my-zsh
+## Oh My Zsh
+[oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
-## Java versions with SDK man
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
+#### .zshrc file config with custom scripts
+Add the following and delete anything extraneous
 
-# Other options
+```
+ZSH_THEME="af-magic"
+plugins=(git node npm macos z)
+```
 
 ## Chrome
 
