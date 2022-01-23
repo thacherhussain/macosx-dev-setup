@@ -28,10 +28,100 @@ When you're done, if it's not already required, reboot your computer.
 
 Checklist:
 
-* Updated to the latest version of Mac OS X
+* Updated to the latest version of Mac OS X (that your computer supports)
 * Installed/Updated Xcode from the AppStore
 * Run all updates from the AppStore
 * Restarted your computer
+
+
+
+## iTerm2 
+
+There are many different options to customize your terminal application, however, I recommend using iTerm2 instead.
+
+Download and install [iTerm2](https://www.iterm2.com/)
+
+OPTIONAL: You can customize the look of iTerm from the preferences menu OR follow this guide to [install z shell and oh-my-zsh](https://github.com/thacherT1D/fishToZsh) for even more functionality.
+
+
+
+## Homebrew
+
+Now that your Terminal is setup, it's time to install [Homebrew](http://brew.sh/), the de facto package manager for OS X. If you've never heard of a package manager, think of it as an app store for **free** command line programs.
+
+To get started, run the following command in your shell. It'll download and run a script file that downloads and installs Homebrew onto your development environment.
+
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+If asked, be sure to agree when asked to install the **Xcode CommandLine Tools**. It may take about 10 minutes to download and install.
+
+
+### Update Homebrew
+
+If you've previously installed Homebrew, now's a good time to update it by running `brew update`
+
+**PROTIP:** Run this command periodically as Homebrew doesn't automatically update itself.
+
+To verify Homebrew is installed correctly, run `brew doctor`
+
+
+## nvm and node
+
+Then we'll use Homebrew to install nvm (a version manager for node) and [node](https://nodejs.org/) which is an open-source, cross-platform runtime system for developing applications in JavaScript. In other words, it runs JavaScript outside the browser.
+
+If you're jumping in here make sure you run `brew update` before running `brew install nvm`
+
+Then create an nvm directory at your root with `mkdir ~/.nvm`
+
+Then open your .zshrc file in vim with `vim ~/.zshrc` 
+
+Then add the following to the .zshrc file
+```
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+```
+
+save and exit out of vim with `ESC + :wq` 
+
+apply these changes to your terminal `source ~/.zshrc`
+
+verify that this has worked by running `nvm ls-remote` which will list all the available versions of node
+
+then run `nvm install node` which will install the latest version of node
+
+You can then use nvm to install whichever version of node that you need, for example if you want to install node 14 you would use `nvm install 14`. To view all versions of node that you have installed `nvm ls`. 
+
+In any terminal if you want to see which version of node you are using run `node -v`. 
+
+nvm is super useful to see what else it can do you can check out the [nvm docs](https://github.com/nvm-sh/nvm)
+
+
+
+## Git
+
+Using Homebrew, you can also install [Git](https://git-scm.com/), the version control system of choice among choosy developers.
+
+To get started, run `brew install git`
+
+Once it finishes, run `git --version` to confirm it has installed correctly 
+
+Let's configure Git to sign your commits with your name and email address.
+
+**WARNING:** Before running the following commands, replace `YOUR FULL NAME` and `YOUR EMAIL ADDRESS` with the name and email from [your GitHub account](https://github.com/settings/profile).
+
+```
+git config --global user.name 'YOUR FULL NAME'
+git config --global user.email 'YOUR EMAIL ADDRESS'
+```
+
+## oh-my-zsh
+
+## Java versions with SDK man
+
+
+# Other options
 
 ## Chrome
 
@@ -59,16 +149,6 @@ Dev Related:
 Other:
 * Kill News Feed
 * Momentum
-
-
-## iTerm2 
-
-There are many different options to customize your terminal application, however, I recommend using iTerm2 instead.
-
-Download and install [iTerm2](https://www.iterm2.com/)
-
-OPTIONAL: You can customize the look of iTerm from the preferences menu OR follow this guide to [install z shell and oh-my-zsh](https://github.com/thacherT1D/fishToZsh) for even more functionality.
-
 
 ## Atom
 
@@ -110,79 +190,6 @@ You'll find it insanely useful to open files and directories into Atom from the 
 To get started, select the `Atom > Install Shell Commands` menu item.
 
 
-## Homebrew
-
-Now that your Terminal is setup, it's time to install [Homebrew](http://brew.sh/), the de facto package manager for OS X. If you've never heard of a package manager, think of it as an app store for **free** command line programs.
-
-To get started, run the following command in your shell. It'll download and run a script file that downloads and installs Homebrew onto your development environment.
-
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-If asked, be sure to agree when asked to install the **Xcode CommandLine Tools**. It may take about 10 minutes to download and install.
-
-
-### Update Homebrew
-
-If you've previously installed Homebrew, now's a good time to update it by running the following command.
-
-```
-brew update
-```
-
-If it's been a while since the last update, you'll see something like this.
-
-**PROTIP:** Run this command periodically as Homebrew doesn't automatically update itself.
-
-### Verify Homebrew
-
-To verify Homebrew is installed correctly, run the following command.
-
-```
-brew doctor
-```
-
-## Git
-
-Using Homebrew, you can also install [Git](https://git-scm.com/), the version control system of choice among choosy developers.
-
-To get started, run the following command.
-
-```
-brew install git
-```
-
-Once it finishes, run the following command.
-
-```
-git --version
-```
-
-Let's configure Git to sign your commits with your name and email address.
-
-**WARNING:** Before running the following commands, replace `YOUR FULL NAME` and `YOUR EMAIL ADDRESS` with the name and email from [your GitHub account](https://github.com/settings/profile).
-
-```
-git config --global user.name 'YOUR FULL NAME'
-git config --global user.email 'YOUR EMAIL ADDRESS'
-```
-
-## Node
-
-Using Homebrew, you can also install [Node](https://nodejs.org/), an open-source, cross-platform runtime system for developing applications in JavaScript. In other words, it runs JavaScript outside the browser.
-
-To get started, run the following command.
-
-```
-brew install node
-```
-
-Once it finishes, run the following command.
-
-```
-node -v
-```
 
 ## Congratulations!
 
